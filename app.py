@@ -62,4 +62,5 @@ def update_output(value):
     return fig
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    port = int(os.getenv('PORT', '8050'))
+    app.run(host='127.0.0.1', port = port, debug=True)
