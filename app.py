@@ -7,19 +7,19 @@ app = Dash(__name__)
 
 import os
 
-# DB_HOST = os.environ.get("DB_HOST")
-# DB_NAME = os.environ.get("DB_NAME")
-# DB_USER = os.environ.get("DB_USER")
-# DB_PASS = os.environ.get("DB_PASS")
-# TB_NAME = os.environ.get("TB_NAME")
-# TB_NAME2 = os.environ.get("TB_NAME2")
+DB_HOST = os.environ.get("DB_HOST")
+DB_NAME = os.environ.get("DB_NAME")
+DB_USER = os.environ.get("DB_USER")
+DB_PASS = os.environ.get("DB_PASS")
+TB_NAME = os.environ.get("TB_NAME")
+TB_NAME2 = os.environ.get("TB_NAME2")
 
-DB_HOST = "ec2-23-21-207-93.compute-1.amazonaws.com"
-DB_NAME = "d6ouisag3koo58"
-DB_USER = "pashmnxwznxjnm"
-DB_PASS = "3e4cd541d4c58e6dc3989038db73c4fb0ee31b8a4f53410d3a4d8b49e18b095c"
-TB_NAME = "form"
-TB_NAME2 = "answers"
+# DB_HOST = "ec2-23-21-207-93.compute-1.amazonaws.com"
+# DB_NAME = "d6ouisag3koo58"
+# DB_USER = "pashmnxwznxjnm"
+# DB_PASS = "3e4cd541d4c58e6dc3989038db73c4fb0ee31b8a4f53410d3a4d8b49e18b095c"
+# TB_NAME = "form"
+# TB_NAME2 = "answers"
 
 conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
 
